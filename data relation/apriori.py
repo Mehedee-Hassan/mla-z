@@ -25,11 +25,11 @@ rules = apriori(transactions ,min_support=0.003 ,min_confidence=0.2 ,min_lift=3,
 
 results = list(rules)
 againlist= []
-
+print(results)
 i = 0
 for result in results:
-    print(result)
-    break
+    againlist.append(str(result))
+    
     #againlist.append(str(list(*result)))
 
 
