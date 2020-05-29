@@ -51,9 +51,13 @@ for n in range(0,N):
     sums_of_rewards[ad] = sums_of_rewards[ad]+reward 
     total_reward = total_reward + reward
     
+    plt.hist(ads_selected)
+    plt.title("histogram of ads selections")
+    plt.xlabel("Ads")
+    plt.show("Number of times each ads was selected")
+    plt.show()
     
-    
-        
+
          #confidence_interval =  
         
         
