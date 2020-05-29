@@ -31,7 +31,7 @@ rules = apriori(transactions ,min_support=0.003 ,min_ confidence=0.2 ,min_lift=3
     # - Lift(A→B) = (Confidence (A→B))/(Support (B))
     # - Confidence(A→B) = (Transactions containing both (A and B))/(Transactions containing A)
     # -Support(B) = (Transactions containing (B))/(Total Transactions)
-
+# source : https://stackabuse.com/association-rule-mining-via-apriori-algorithm-in-python/
 
 """
 aa = {'a':[1,2,3,4,5,6],'b':[31,42,32,44,65,76],'n':[301,142,232,444,365,276]}
