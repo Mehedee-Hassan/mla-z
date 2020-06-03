@@ -17,6 +17,10 @@ N =10000
 d=10
 ads_selected =[]   #
 
+numbers_of_rewards_1 = [0] * d
+numbers_of_rewards_0 = [0] * d
+
+
 numbers_of_selections = [0] * d # a vector containing only 0s of size d 
 # at the initial stage the random selection is zero
 sums_of_rewards = [0] * d
@@ -56,6 +60,8 @@ for n in range(0,N):
     plt.xlabel("Ads")
     plt.show("Number of times each ads was selected")
     plt.show()
+    
+    
     
 
          #confidence_interval =  
