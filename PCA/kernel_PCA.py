@@ -38,7 +38,7 @@ X_test = kpca.transform(X_test)
 
 #fitting logistic regression to training set
 from sklearn.linear_model import LogisticRegression
-classifierr=LogisticRegression(random_state=0)
+classifier=LogisticRegression(random_state=0)
 classifier.fit(X_train,y_train)
 
 
@@ -65,8 +65,8 @@ for i, j in enumerate(np.unique(y_set)):
     plt.scatter(X_set[y_set == j, 0], X_set[y_set == j, 1],
                 c = ListedColormap(('red', 'green'))(i), label = j)
 plt.title('Logistic Regression (Training set)')
-plt.xlabel('Age')
-plt.ylabel('Estimated Salary')
+plt.xlabel('PC1')
+plt.ylabel('PC2')
 plt.legend()
 plt.show()
 
@@ -84,8 +84,9 @@ for i, j in enumerate(np.unique(y_set)):
     plt.scatter(X_set[y_set == j, 0], X_set[y_set == j, 1],
                 c = ListedColormap(('red', 'green'))(i), label = j)
 plt.title('Logistic Regression (Test set)')
-plt.xlabel('Age')
-plt.ylabel('Estimated Salary')
+plt.xlabel('PC1')
+plt.ylabel('PC2')
 plt.legend()
 plt.show()
+
 
