@@ -3,7 +3,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
-
+path = "C:\\Users\\mehedee\\Documents\\Python Scripts\\tutorial\\Artificial_Neural_Networks\\ML_DS\\PCA\\"
 # Importing the dataset
 dataset = pd.read_csv('Social_Network_Ads.csv')
 X = dataset.iloc[:, [2,3]].values
