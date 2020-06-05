@@ -2,10 +2,6 @@
 # the pca and lda works on linearly separable data 
 # kernel pca : can work on nonlinearly separable data
 
-
-     
-  
-
 #logistic regression
 # Importing the libraries
 import numpy as np
