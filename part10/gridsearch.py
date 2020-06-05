@@ -67,6 +67,11 @@ parameters = [
             'kernel': ['rbf'],
             'gamma' : [0.5,0.1,0.01,0.001],
         },
+        {
+            'C':[1,10,100,1000],
+            'kernel': ['rbf'],
+            'gamma' : [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9],
+        },
         ]
 
 gridsearch = GridSearchCV(estimator=classifier, 
@@ -78,7 +83,8 @@ gridsearch = GridSearchCV(estimator=classifier,
 gridsearch = gridsearch.fit(X_train,y_train)
 
 
-
+best_accuracy = gridsearch.best_score_
+best_parameters = gridsearch.best_params_
 
 
 
