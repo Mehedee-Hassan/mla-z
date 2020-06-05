@@ -14,7 +14,7 @@ dataset = pd.read_csv(path+'Churn_Modelling.csv')
 
 
 X = dataset.iloc[:, 3:13].values #3-12 
-y = dataset.iloc[:, 4].values
+y = dataset.iloc[:, 13].values
 
 
 
