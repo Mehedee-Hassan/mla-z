@@ -69,6 +69,15 @@ parameters = [
         },
         ]
 
+gridsearch = GridSearchCV(estimator=classifier, 
+                          param_grid=parameters,
+                          scoring = 'accuracy',
+                          cv=10,
+                          n_jobs= -1)
+
+gridsearch = gridsearch.fit(X_train,y_train)
+
+
 
 
 
